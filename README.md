@@ -12,7 +12,6 @@ magazin cover| render
 :-|-:
 ![Cover](./images/cover.jpg)|![Render](./images/cover_render.png)
 
-<!-- - [Usage](#usage) -->
 - [Getting started](#getting-started)
 - [Examples](#examples)
 - [Documentation](#openscad-code)
@@ -28,6 +27,8 @@ magazin cover| render
 
 Made in [OpenSCAD](https://www.openscad.org) 2019.05. Support Window, Linux, MacOS.
 
+Check View -> Orthogonal for best result.
+
 Main library file is `tech_estetika_numbers.scad`. 
 
 Add to project:
@@ -41,6 +42,8 @@ $angle=10;
 $vpr=[$angle,0,45];
 numbers("+1.2","down");
 ```
+
+Then press `F5` for preview.
 
 Number one by one
 
@@ -104,6 +107,8 @@ Animations:
 - `vert_edge_k` - Coefficient to match vertical edge to fit length at view angle `$vert_edge_k`
 
 ### Numbers symbols
+
+`$zero_rotate` - change shape of zero symbol.
  
 - `number_0($edge,$vert_edge_k,$zero_rotate);`
 - `number_1($edge,$vert_edge_k);`
@@ -117,6 +122,8 @@ Animations:
 - `number_9($edge,$vert_edge_k);`
 
 ### Special symbols
+
+`$direction` - change shape of objects.
 
 - `dot($edge,$vert_edge_k,$direction);`
 - `comma($edge,$vert_edge_k,$direction);`
@@ -175,6 +182,6 @@ Example render engine eevee
 
 ## License
 
-Creative Common 4.0 (BY)
+[Creative Common 4.0 (BY)](https://creativecommons.org/licenses/by/4.0)
 
 [![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
